@@ -62,6 +62,7 @@ defmodule MessageQueue do
     end
   end
 
+  @impl true
   def handle_info(:timeout, _) do
     {:stop, :normal, ""}
   end
